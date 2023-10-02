@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@dataverse/dataverse-connector": "^1.0.27",
+    "bufferutil": "^4.0.7",
+    "encoding": "^0.1.13",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "utf-8-validate": "^6.0.3"
   },
   "devDependencies": {
     "@types/node": "latest",
