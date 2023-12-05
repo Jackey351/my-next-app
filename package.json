@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dataverse/dataverse-connector": "^1.0.28",
+    "@dataverse/dataverse-connector": "^1.0.31",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"

@@ -4,6 +4,7 @@ import Image from "next/image";
 import {
   DataverseConnector,
   SYSTEM_CALL,
+  WALLET
 } from "@dataverse/dataverse-connector";
 import { useEffect } from "react";
 
@@ -11,8 +12,8 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const dataverseConnector = new DataverseConnector();
-      await dataverseConnector.connectWallet();
-      // await dataverseConnector.runOS({ method: SYSTEM_CALL.createCapability });
+      await dataverseConnector.connectWallet({wallet:WALLET.METAMASK});
+      await dataverseConnector.runOS({ method: SYSTEM_CALL.createCapability,params:{appId:"9aaae63f-3445-47d5-8785-c23dd16e4965"} });
     })();
   }, []);
 
